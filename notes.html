@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operating System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="taskbar">
+        <div class="start-menu">
+            <button class="start-button">Start</button>
+            <div class="start-menu-content">
+              <a href="#">Browser</a> 
+                <a href="#">Notes</a>
+                <a href="#">Terminal</a>
+                <a href="#">Settings</a>
+                <a href="shutdown.html" onclick="shutDown()">Click me</a>
+              <a href="#">Games</a>
+              <a href="#">Files</a>
+            </div>
+        </div>
+       <!--- <div class="clock">
+            <p id="clock-display">12:00</p>
+        </div>
+    </div> --> 
+
+    <div class="desktop">
+        
+    </head>
+    <body>
+        <div class="window">
+            <div class="window-bar">
+                <div class="window-title">Text Editor</div>
+                <button class="window-close"><a href="index.html">X</a></button>
+            </div>
+            <div class="editor" contenteditable="true"></div>
+        </div>
+    </div>
+    </body>
+
+        <style>
+            .window {
+                width: 400px;
+                height: 300px;
+                border: 1px solid black; 
+                position: relative;
+            }
+    
+            .window-bar {
+                 background-color: #ff6347; 
+                color: #fff;
+                padding: 3px;
+                display: flex;
+                justify-content: space-between;
+                cursor: move;
+                width: 416px; 
+                height: 20px; 
+            }
+    
+            .window-title {
+                font-weight: bold;
+            }
+    
+            .editor {
+                width: 100%;
+                height: calc(100% - 25px);
+                border: none;
+                padding: 10px;
+                resize: none;
+                background-color: white; 
+            }
+        </style>
